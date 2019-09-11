@@ -8,6 +8,9 @@ input.onkeyup = function (event) {
             axios.get('https://api.github.com/users/' + user, {
                     headers: {
                         'Authorization': 'token d1681b1ad3448dbcf7c6104c61f3e110dcf86e42'
+                    },
+                    auth: {
+                        'username': 'victor.baptista@mzgroup.com'
                     }
                 })
                 .then(function (response) {
@@ -20,6 +23,7 @@ input.onkeyup = function (event) {
                     createCard(name,pic,link,desc);
 
                     console.log(response.data)
+                    console.log(response.headers)
                 },
                 (error) => {
                     alert(error);
