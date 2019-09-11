@@ -7,10 +7,10 @@ input.onkeyup = function (event) {
         if (user.length > 0) {
             axios.get('https://api.github.com/users/' + user, {
                     headers: {
-                        'Authorization': 'token d1681b1ad3448dbcf7c6104c61f3e110dcf86e42'
+                        'Authorization': 'token c3d8cb966aabef5a5b626beef1744423710031b7'
                     },
                     auth: {
-                        'username': 'victor.baptista@mzgroup.com'
+                        'username': 'victorbaptista16@hotmail.com'
                     }
                 })
                 .then(function (response) {
